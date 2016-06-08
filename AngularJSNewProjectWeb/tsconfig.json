@@ -9,10 +9,13 @@
     "emitDecoratorMetadata": true,
     "outDir": "./Scripts/App"
   },
-  "filesGlob": [
-    "./**/*.ts"
-  ],
   "files": [
+    "./src/app.ts",
+    "./src/model.ts",
+    "./src/main.ts",
+    "./src/user.ts",
+    "./src/users.ts",
+    "./src/userService.ts",
     "./typings/index.d.ts"
   ]
 }

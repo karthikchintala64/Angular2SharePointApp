@@ -9,19 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("angular2/core");
+var router_1 = require('angular2/router');
 var model_1 = require("./model");
+var users_1 = require("./users");
 var MyApp = (function () {
     function MyApp() {
         this.model = new model_1.MyModel();
     }
-    MyApp.prototype.getCompiler = function () {
-        return this.model.compiler;
-    };
     MyApp = __decorate([
         core_1.Component({
             selector: "my-app",
-            template: "<div>Hello test test  from {{getCompiler()}}</div>"
-        }), 
+            templateUrl: './templates/app.html',
+            directives: [router_1.ROUTER_DIRECTIVES],
+            providers: [router_1.ROUTER_PROVIDERS]
+        }),
+        router_1.RouteConfig([
+            { path: '/users', component: users_1.UsersComponent, name: 'Users', useAsDefault: true }
+        ]), 
         __metadata('design:paramtypes', [])
     ], MyApp);
     return MyApp;

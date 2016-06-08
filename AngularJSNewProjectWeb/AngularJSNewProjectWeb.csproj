@@ -197,11 +197,35 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="node_modules\angular2\bundles\angular2-all-testing.umd.dev.js" />
+    <Content Include="node_modules\angular2\bundles\angular2-all.umd.dev.js" />
+    <Content Include="node_modules\angular2\bundles\angular2-all.umd.js" />
+    <Content Include="node_modules\angular2\bundles\angular2-all.umd.min.js" />
+    <Content Include="node_modules\angular2\bundles\angular2-polyfills.min.js" />
+    <Content Include="node_modules\angular2\bundles\angular2.dev.js" />
+    <Content Include="node_modules\angular2\bundles\angular2.min.js" />
+    <Content Include="node_modules\angular2\bundles\http.dev.js" />
+    <Content Include="node_modules\angular2\bundles\http.js" />
+    <Content Include="node_modules\angular2\bundles\http.min.js" />
+    <Content Include="node_modules\angular2\bundles\overview.md" />
+    <Content Include="node_modules\angular2\bundles\router.dev.js" />
+    <Content Include="node_modules\angular2\bundles\router.js" />
+    <Content Include="node_modules\angular2\bundles\router.min.js" />
+    <Content Include="node_modules\angular2\bundles\testing.dev.js" />
+    <Content Include="node_modules\angular2\bundles\testing.dev.js.map" />
+    <Content Include="node_modules\angular2\bundles\upgrade.dev.js" />
+    <Content Include="node_modules\angular2\bundles\upgrade.js" />
+    <Content Include="node_modules\angular2\bundles\upgrade.min.js" />
+    <Content Include="node_modules\angular2\bundles\web_worker\ui.dev.js" />
+    <Content Include="node_modules\angular2\bundles\web_worker\worker.dev.js" />
     <Content Include="Scripts\angular2-polyfills.js" />
     <Content Include="Scripts\angular2.js" />
     <Content Include="Scripts\App\app.js" />
     <Content Include="Scripts\App\main.js" />
     <Content Include="Scripts\App\model.js" />
+    <Content Include="Scripts\App\user.js" />
+    <Content Include="Scripts\App\users.js" />
+    <Content Include="Scripts\App\userService.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="package.json" />
@@ -209,7 +233,11 @@
     <Content Include="Scripts\App\app.js.map" />
     <Content Include="Scripts\App\main.js.map" />
     <Content Include="Scripts\App\model.js.map" />
+    <Content Include="Scripts\App\user.js.map" />
+    <Content Include="Scripts\App\users.js.map" />
+    <Content Include="Scripts\App\userService.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\http.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -220,10 +248,13 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\router.js" />
     <Content Include="Scripts\Rx.js" />
     <Content Include="Scripts\spcontext.js" />
     <Content Include="Scripts\system.src.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="templates\app.html" />
+    <Content Include="templates\users.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -257,6 +288,9 @@
     <TypeScriptCompile Include="src\app.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\model.ts" />
+    <TypeScriptCompile Include="src\user.ts" />
+    <TypeScriptCompile Include="src\users.ts" />
+    <TypeScriptCompile Include="src\userService.ts" />
     <TypeScriptCompile Include="typings\globals\es6-shim\index.d.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
   </ItemGroup>
@@ -264,10 +298,10 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <NodeLib Include="$(MSBuildProjectDirectory)\node_modules\angular2\bundles\angular2.js" />
-    <NodeLib Include="$(MSBuildProjectDirectory)\node_modules\angular2\bundles\angular2-polyfills.js" />
     <NodeLib Include="$(MSBuildProjectDirectory)\node_modules\systemjs\dist\system.src.js" />
     <NodeLib Include="$(MSBuildProjectDirectory)\node_modules\rxjs\bundles\Rx.js" />
+    <NodeLib Include="node_modules\angular2\bundles\angular2-polyfills.js" />
+    <NodeLib Include="node_modules\angular2\bundles\angular2.js" />
   </ItemGroup>
   <Target Name="CopyFiles" BeforeTargets="Build">
     <Copy SourceFiles="@(NodeLib)" DestinationFolder="$(MSBuildProjectDirectory)\Scripts" />
