@@ -1,4 +1,5 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
     "noImplicitAny": false,
     "noEmitOnError": true,
@@ -8,10 +9,10 @@
     "emitDecoratorMetadata": true,
     "outDir": "./Scripts/App"
   },
+  "filesGlob": [
+    "./**/*.ts"
+  ],
   "files": [
-    "./src/app.ts",
-    "./src/model.ts",
-    "./src/main.ts",
     "./typings/index.d.ts"
   ]
 }

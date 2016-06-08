@@ -3,7 +3,7 @@ import {MyModel} from "./model"
 
 @Component({
     selector: `my-app`,
-    template: `<div>Hello from {{getCompiler()}}</div>`
+    template: `<div>Hello test fdsaf  from {{getCompiler()}}</div>`
 })
 export class MyApp {
     model = new MyModel();
